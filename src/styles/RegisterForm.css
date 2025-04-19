@@ -1,0 +1,101 @@
+.register-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.register-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  background-color: #fcf3f3;
+  box-sizing: border-box;
+}
+
+.register-header .logo {
+  margin: 0;
+  font-size: 2rem;
+  color: #ec244f;
+}
+
+.register-header h2 {
+  margin: 10px 0 5px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.register-header p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.register-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.register-btn {
+  background-color: #ec244f;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.register-btn:hover {
+  background-color: #ca1540;
+}
+
+.login-link p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.register-right {
+  flex: 1;
+  background-image: url('../../public/assets/Welcome.jpeg');
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+.illustration-text {
+  margin-top: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.illustration-text h3 {
+  font-size: 1.2rem;
+  color: #333;
+}

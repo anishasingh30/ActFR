@@ -1,0 +1,153 @@
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  background-color: #fcf3f3;
+  box-sizing: border-box;
+}
+
+.login-header .logo {
+  margin: 0;
+  font-size: 2rem;
+  color: #ec244f; 
+}
+
+.login-header h2 {
+  margin: 10px 0 5px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.login-header p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.sign-in-btn {
+  background-color: #ec244f;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.sign-in-btn:hover {
+  background-color: #ca1540;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.separator span {
+  flex: 1;
+  text-align: center;
+  color: #999;
+  position: relative;
+}
+
+.separator span::before,
+.separator span::after {
+  content: '';
+  display: inline-block;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+}
+
+.separator span::before {
+  left: 0;
+}
+
+.separator span::after {
+  right: 0;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.google-btn img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.signup-link p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Right column for illustration */
+.login-right {
+  flex: 1;
+  background-image: url('../../public/assets/Thankyou.jpeg');
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-text {
+  margin-top: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.illustration-text h3 {
+  font-size: 1.2rem;
+  color: #333;
+}

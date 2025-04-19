@@ -1,0 +1,56 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --navbar-bg: #f8f9fa;
+    --background: #fff url("../../public/assets/side-img8.jpeg") center center / cover;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --navbar-bg: #1e1e1e;
+    --background: #000 url("../../public/assets/side-img11.jpeg") center center / cover;
+}
+
+/* Blue Theme */
+[data-theme="blue"] {
+    --bg-color: #e3f2fd;
+    --text-color: #0d47a1;
+    --navbar-bg: #bbdefb;
+    --background: #90caf9 url("../../public/assets/side-img-blue.jpeg") center center / cover;
+}
+
+/* Green Theme */
+[data-theme="green"] {
+    --bg-color: #e8f5e9;
+    --text-color: #1b5e20;
+    --navbar-bg: #a5d6a7;
+    --background: #81c784 url("../../public/assets/side-img-green.jpeg") center center / cover;
+}
+
+/* Purple Theme */
+[data-theme="purple"] {
+    --bg-color: #f3e5f5;
+    --text-color: #4a148c;
+    --navbar-bg: #ce93d8;
+    --background: #ba68c8 url("../../public/assets/side-img-purple.jpeg") center center / cover;
+}
+
+/* Apply styles dynamically */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+}
+
+.side-nav {
+    background: var(--background);
+}
+
+.side-nav .side-nav-item {
+    color: var(--text-color);
+}

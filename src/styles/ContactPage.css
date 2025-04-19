@@ -1,0 +1,290 @@
+/* Light/Dark Mode Styles */
+
+/* Light/Dark Mode Styles */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+[data-theme="blue"] {
+  --bg-color: #c6dff0;
+  --text-color: #000;
+}
+
+[data-theme="green"] {
+  --bg-color: #b1fab4;
+  --text-color: #000;
+}
+
+[data-theme="purple"] {
+  --bg-color: #e1bbe7;
+  --text-color: #000;
+}
+
+/* Container + theme transitions */
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.4s, color 0.4s;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dark mode */
+.contact-page.dark {
+  background: #1f1f1f;
+  color: #eee;
+}
+
+/* Header with title + theme toggle icon */
+.contact-header {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-left: 800px;
+}
+
+.contact-header h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+/* .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+  }
+  .contact-page.dark .theme-toggle {
+    color: #eee;
+  } */
+
+/* Contact Container with two cards side by side */
+.contact-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+/* Card Styles */
+.contact-card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+[data-theme="light"] .contact-card h2 {
+  color: #000;
+}
+
+[data-theme="blue"] .contact-card h2 {
+  color: #002b5c;
+}
+
+[data-theme="green"] .contact-card h2 {
+  color: #0a3d20;
+}
+
+[data-theme="purple"] .contact-card h2 {
+  color: #38006b;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+[data-theme="light"] .contact-card p {
+  color: #000;
+}
+
+[data-theme="blue"] .contact-card p {
+  color: #002b5c;
+}
+
+[data-theme="green"] .contact-card p {
+  color: #0a3d20;
+}
+
+[data-theme="purple"] .contact-card p {
+  color: #38006b;
+}
+
+[data-theme="dark"] .contact-card {
+  background: #2c2c2c;
+  border-color: #444;
+}
+
+[data-theme="dark"] .contact-card h2 {
+  color: #fff;
+}
+
+[data-theme="dark"] .contact-card p {
+  color: #ccc;
+}
+
+[data-theme="blue"] .contact-card {
+  background: #90caf9;
+  border-color: #0d47a1;
+  border: 5px solid#0d47a1;
+}
+
+
+[data-theme="green"] .contact-card {
+  background: #81c784;
+  border-color: #1b5e20;
+  border: 5px solid #1b5e20;
+}
+
+
+[data-theme="purple"] .contact-card {
+  background: #ba68c8;
+  border-color: #4a148c;
+  border: 5px solid #4a148c;
+}
+
+/* CTA Buttons */
+.contact-button {
+  display: inline-block;
+  background: #ec244f;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.contact-button:hover {
+  background: #ca1540;
+  /* Darker on hover */
+}
+
+/* Offices Section */
+.offices-section {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.offices-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+[data-theme="light"] .offices-section h2 {
+  color: #000;
+}
+
+[data-theme="blue"] .offices-section h2 {
+  color: #002b5c;
+}
+
+[data-theme="green"] .offices-section h2 {
+  color: #0a3d20;
+}
+
+[data-theme="purple"] .offices-section h2 {
+  color: #38006b;
+}
+
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+  /* offices text aligned left for clarity */
+}
+
+.offices-grid h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+[data-theme="light"] .offices-grid h3 {
+  color: #000;
+}
+
+[data-theme="blue"] .offices-grid h3 {
+  color: #002b5c;
+}
+
+[data-theme="green"] .offices-grid h3 {
+  color: #0a3d20;
+}
+
+[data-theme="purple"] .offices-grid h3 {
+  color: #38006b;
+}
+
+.offices-grid p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+[data-theme="light"] .offices-grid p {
+  color: #000;
+}
+
+[data-theme="blue"] .offices-grid p {
+  color: #002b5c;
+}
+
+[data-theme="green"] .offices-grid p {
+  color: #0a3d20;
+}
+
+[data-theme="purple"] .offices-grid p {
+  color: #38006b;
+}
+
+/* Dark mode overrides for offices */
+[data-theme="dark"] .offices-grid p {
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .offices-grid {
+    grid-template-columns: 1fr;
+  }
+}
