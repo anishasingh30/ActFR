@@ -21,7 +21,7 @@ function App() {
           <Route path="/lesson/all" element={<AllCareersPage />} />
           <Route path="/quiz-categories" element={<SignLangQuizCategories />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/profile" element={<profile />} />
+          <Route path="/Profile" element={<Profile />} />
         </Routes>
         <Footer />
       </Router>

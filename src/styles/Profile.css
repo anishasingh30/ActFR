@@ -1,0 +1,178 @@
+/* Profile Container */
+.profile-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--btn-text);
+}
+
+.profile-container p {
+    font-size: 1rem;
+    color: var(--btn-primary);
+    margin: 8px 0;
+    line-height: 1.6;
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.profile-container p strong {
+    color: var(--text-strong);
+}
+
+/* Profile Sections */
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+}
+
+.profile-section {
+    padding: 16px;
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.profile-section h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.profile-section p {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+/* Edit Button */
+.edit-button {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-size: 1.rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button:hover {
+    background-color: var(--btn-hover);
+    transform: scale(1.05);
+}
+
+/* Form Styling */
+.profile-form label {
+    display: block;
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.profile-form input,
+.profile-form select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Form Button */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer button {
+    background-color: var(--btn-primary);
+    color: var(--btn-text);
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-footer button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* Themes */
+:root {
+    --bg-primary: #fcfcfc;
+    --bg-secondary: #ff5a767f;
+    --text-primary: #272626;
+    --border-color: #cccccc;
+    --accent-color: #e94e70;
+    --btn-primary: #2d2828;
+    --btn-hover: #635f5f;
+    --btn-text: #000000;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #2c2c2c;
+    --text-primary: #ffffff;
+    --border-color: #444444;
+    --accent-color: #8888ff;
+    --btn-primary: #898787;
+    --btn-hover: #848383;
+    --btn-text: #ede9e9;
+
+}
+
+/* Blue Theme */
+[data-theme='blue'] {
+    --bg-primary: #e6f0ff;
+    --bg-secondary: #d0e3ff;
+    --text-primary: #003366;
+    --border-color: #6699cc;
+    --accent-color: #0055cc;
+    --btn-primary: #136cea;
+    --btn-hover: #0044aa;
+    --btn-text: #003366;
+}
+
+/* Green Theme */
+[data-theme='green'] {
+    --bg-primary: #eaffea;
+    --bg-secondary: #d5f5d5;
+    --text-primary: #1d4020;
+    --border-color: #7fc97f;
+    --accent-color: #3fa73f;
+    --btn-primary: #3fa73f;
+    --btn-hover: #2e8b2e;
+    --btn-text: #1d4020;
+}
+
+/* Purple Theme */
+[data-theme='purple'] {
+    --bg-primary: #ebd2ff;
+    --bg-secondary: #e0d0f0;
+    --text-primary: #3d1d5c;
+    --border-color: #b285d9;
+    --accent-color: #9955cc;
+    --btn-primary: #9955cc;
+    --btn-hover: #7e3fc9;
+    --btn-text: #3d1d5c;
+}

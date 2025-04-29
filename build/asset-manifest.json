@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffc5e7c6.css",
+    "main.js": "/static/js/main.b98433b2.js",
+    "static/media/Where do you start when you want to learn American Sign Language (ASL)_ _ Start ASL.jpeg": "/static/media/Where do you start when you want to learn American Sign Language (ASL)_ _ Start ASL.09ff4489ff9fca19a27e.jpeg",
+    "index.html": "/index.html",
+    "main.ffc5e7c6.css.map": "/static/css/main.ffc5e7c6.css.map",
+    "main.b98433b2.js.map": "/static/js/main.b98433b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffc5e7c6.css",
+    "static/js/main.b98433b2.js"
+  ]
+}
